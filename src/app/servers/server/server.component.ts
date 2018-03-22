@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { ServersService } from '../servers.service';
-import {ActivatedRoute, Data, Params, Router} from '@angular/router';
+import {ActivatedRoute, Data, Router} from '@angular/router';
 
 @Component({
   selector: 'app-server',
@@ -10,9 +10,9 @@ import {ActivatedRoute, Data, Params, Router} from '@angular/router';
 })
 export class ServerComponent implements OnInit {
   server: {id: number, name: string, status: string};
-  allowEdit = '';
+  // allowEdit = '';
 
-  constructor(private serversService: ServersService,
+  constructor(/*private serversService: ServersService,*/
               private route: ActivatedRoute,
               private router: Router) { }
 
